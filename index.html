@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Starter A-Frame Project | Le projet de départ</title>
+    <meta name="description" content="Starter A-Frame Project">
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <!-- Add images here | Placer des images ici-->
+          <!--Background image by/par photoguy 2005 from Flickr-->
+          <img id="background" src="https://cdn.glitch.com/1368ed30-f950-4880-8cbd-2568c447316f%2F28306434744_0262789ade_k.jpg?1536335637688"/>
+          <!--Concrete texture by/par Kyden from Flickr-->
+          <img id="concrete" src="https://cdn.glitch.com/1368ed30-f950-4880-8cbd-2568c447316f%2F3945406656_7186e40eb4_z.jpg?1536335894978"/>
+      </a-assets>
+      <a-sphere src="#concrete" position="0 2 -3" radius="0.5" shadow></a-sphere>
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="pink" shadow></a-plane>
+      <a-sky src="#background"></a-sky>
+    </a-scene>
+    
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js"></script>
+  </body>
+</html>
